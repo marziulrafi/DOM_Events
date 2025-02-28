@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More Events</title>
+</head>
+<body>
+    <button id="btn-mouse">Micky Mouse</button>
+    <input id="username" type="text" placeholder="Your Name">
+    <input id="user-mail" type="text" placeholder="Your Email">
+    <script>
+        document.getElementById('btn-mouse').addEventListener('mouseenter', function() {
+            // console.log('MICKYYY!')
+        })
+        document.getElementById('btn-mouse').addEventListener('mousemove', function() {
+            // console.log('MICKYYY!')
+        })
+        document.getElementById('btn-mouse').addEventListener('mouseout', function() {
+            // console.log('MICKYYY!')
+        })
+
+        document.getElementById('username').addEventListener('focus', function() {
+            // console.log('User is writing Name')
+        })
+        document.getElementById('user-mail').addEventListener('focus', function() {
+            // console.log('User is writing Email')
+        })
+
+        document.getElementById('username').addEventListener('blur', function() {
+            // console.log('User wrote Name')
+        })
+        document.getElementById('user-mail').addEventListener('blur', function() {
+            // console.log('User wrote Email')
+        })
+
+
+        document.getElementById('username').addEventListener('keydown', function(event) {
+            // console.log('Typing . . .', event.target.value)
+        })
+        document.getElementById('username').addEventListener('keyup', function(event) {
+            console.log('Typing . . .', event.target.value)
+        })
+    </script>
+</body>
+</html>
